@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrivetalk</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+	<div class="header__container container">
+		<div class="header__logo">
+			Thrivetalk
+	  </div>
+   	<nav class="header__nav">
+			<ul class="header__nav-list">
+				<li class="header__nav-item">
+					<a href="#" class="header__nav-link">Home</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="header__nav-link">About</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="header__nav-link">Services</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="#" class="header__nav-link">Blog</a>
+				</li>
+			</ul>
+
+			<button class="header__button">
+				CONTACT US
+		  </button>
+
+	  </nav>
+		<button class="header__burger">
+			<svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+				<path
+					d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+				<path
+					d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+				</svg>
+		</button>
+	</div>
+</header>
+
+<main>
+    <section class="hero">
+			<div class="hero__container container">
+				<div class="hero__content">
+					<div class="hero__top">
+						Thrivetalk
+					</div>
+					<h1 class="hero__main-title">
+						HELPING YOU THRIVE IN ALL AREAS OF LIFE
+					</h1>
+					<div class="hero__descr">
+						Our highly talented therapists can help you with a range of 
+						issues including relationships, sex, PTSD, 
+						depression, social anxiety, or even just caring for yourself more.
+					</div>
+					<div class="hero__btn-group">
+						<button class="hero__btn-iam">
+							WHO AM I
+						</button>
+						<button class="hero__btn-ido">
+							WHAT DO I DO
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+</main>
+
+<script>
+
+	document.querySelector('.header__burger').addEventListener('click', (e) => {
+		document.querySelector('.header__nav').classList.toggle('header__nav--open');
+	});
+
+</script>
+    
+</body>
+</html>
